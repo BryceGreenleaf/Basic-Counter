@@ -33,11 +33,12 @@
             this.results = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Clear = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(77, 133);
+            this.btn_Add.Location = new System.Drawing.Point(96, 133);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(129, 70);
             this.btn_Add.TabIndex = 1;
@@ -47,7 +48,7 @@
             // 
             // btn_Subtract
             // 
-            this.btn_Subtract.Location = new System.Drawing.Point(263, 133);
+            this.btn_Subtract.Location = new System.Drawing.Point(249, 133);
             this.btn_Subtract.Name = "btn_Subtract";
             this.btn_Subtract.Size = new System.Drawing.Size(129, 70);
             this.btn_Subtract.TabIndex = 2;
@@ -88,11 +89,22 @@
             this.btn_Clear.UseVisualStyleBackColor = true;
             this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
+            // btn_close
+            // 
+            this.btn_close.Location = new System.Drawing.Point(360, 278);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(111, 36);
+            this.btn_close.TabIndex = 6;
+            this.btn_close.Text = "Close";
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(483, 326);
+            this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.results);
@@ -111,6 +123,7 @@
         private System.Windows.Forms.TextBox results;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Clear;
+        private System.Windows.Forms.Button btn_close;
     }
 }
 

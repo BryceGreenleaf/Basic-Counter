@@ -45,5 +45,10 @@ namespace Basic_Counter
             results.Text = result.ToString();
 
         }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
