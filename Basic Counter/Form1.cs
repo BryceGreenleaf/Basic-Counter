@@ -25,10 +25,22 @@ namespace Basic_Counter
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Add_Click(object sender, EventArgs e)
         {
             counter += 1;
-            button1.Text = counter.ToString();
+        }
+
+        private void btn_Subtract_Click(object sender, EventArgs e)
+        {
+            counter -= 1;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = counter.ToString();
+            label1.Invalidate();
+            label1.Update();
+            Application.DoEvents(); // Force an immediate UI update
         }
     }
 }
